@@ -13,14 +13,14 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 
-public class SymmetricKeyUtils {
+public class SymmetricEncryptionUtils {
 	
 	private static String AES = "AES";
 	private static String AES_ALGO = "AES/CBC/PKCS5Padding";
 	
 	public static SecretKey createAESSecretKey() throws NoSuchAlgorithmException {
 		SecureRandom secureRandom = new SecureRandom();	
-		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+		KeyGenerator keyGenerator = KeyGenerator.getInstance(AES);
 		keyGenerator.init(256,secureRandom);
 		SecretKey aesSecretKey = keyGenerator.generateKey();
 		return aesSecretKey;		
