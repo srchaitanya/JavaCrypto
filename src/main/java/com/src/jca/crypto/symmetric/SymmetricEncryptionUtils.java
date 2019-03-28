@@ -1,4 +1,4 @@
-package com.src.jca.cryptography;
+package com.src.jca.crypto.symmetric;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;

@@ -1,4 +1,4 @@
-package com.src.jca.cryptography;
+package com.src.jca.crypto.asymmetric;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;

@@ -1,4 +1,4 @@
-package com.src.jca.cryptography;
+package com.src.jca.crypto.asymmetric;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
