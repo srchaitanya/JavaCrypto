@@ -26,7 +26,7 @@ public class HashUtils {
 	}
 	
 	public static String hashPasword(String plainPassword) throws Exception {
-		return BCrypt.hashpw(plainPassword, BCrypt.gensalt(29));
+		return BCrypt.hashpw(plainPassword, BCrypt.gensalt());
 	}
 	
 	public static boolean checkPassword(String plainPassword, String hashedPassword) throws Exception {
