@@ -40,7 +40,7 @@ public class SymmetricEncryptionUtils {
 		return aesCipher.doFinal(plainText.getBytes());		
 	}
 
-	public static byte[] performDESDecryption(byte[] encryptedData, SecretKey secretKey, byte[] initVector) throws Exception {
+	public static byte[] performAESDecryption(byte[] encryptedData, SecretKey secretKey, byte[] initVector) throws Exception {
 		Cipher cipher = Cipher.getInstance(AES_ALGO);
 		IvParameterSpec ivParamSpec = new IvParameterSpec(initVector);
 		cipher.init(Cipher.DECRYPT_MODE, secretKey, ivParamSpec);

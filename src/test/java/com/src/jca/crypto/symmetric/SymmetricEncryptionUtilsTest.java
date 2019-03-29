@@ -41,7 +41,7 @@ public class SymmetricEncryptionUtilsTest {
 		String plainText = "This is for AES/CBC/PKCS5Padding encryption";
 		byte[] encryptedData = SymmetricEncryptionUtils.performAESEncryption(plainText, secretKey, initVector);
 		assertNotNull("encrypted data is null",encryptedData);
-		byte[] decryptedData = SymmetricEncryptionUtils.performDESDecryption(encryptedData,secretKey,initVector);
+		byte[] decryptedData = SymmetricEncryptionUtils.performAESDecryption(encryptedData,secretKey,initVector);
 		String decryptedString = new String(decryptedData);
 		org.junit.Assert.assertEquals("Decryption not working !!! ",plainText, decryptedString);
 	}
